@@ -1,0 +1,16 @@
+{
+    "name": "neon-php/laravel-migration-checksum",
+    "description": "Checksum creation tool for laravel migrations",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Neon\\Migration\\Checksum\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felix Kuntscher"
+        }
+    ],
+    "require": {}
+}
