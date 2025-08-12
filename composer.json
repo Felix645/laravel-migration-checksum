@@ -4,7 +4,8 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Neon\\Migration\\Checksum\\": "src/"
+            "Neon\\Migration\\Checksum\\": "src/",
+            "Neon\\Migration\\Checksum\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -12,5 +13,20 @@
             "name": "Felix Kuntscher"
         }
     ],
-    "require": {}
+    "license": "MIT",
+    "require": {
+        "php": ">=8.4",
+        "laravel/framework": "^12.22"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.4",
+        "phpunit/phpunit": "^12.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Neon\\Migration\\Checksum\\ChecksumServiceProvider"
+            ]
+        }
+    }
 }
