@@ -37,6 +37,8 @@ trait ChecksForChecksum
                     '--path' => $key_config['--path'],
                     '--database' => $key_config['--database'],
                 ]);
+
+                Checksum::dir($key)->updateChecksum();
             }
         }
 
