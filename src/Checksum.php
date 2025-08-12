@@ -68,8 +68,8 @@ class Checksum
 
     public static function reset(): void
     {
-        foreach (self::$instances as $instance) {
-            $instance->resetChecksum();
+        foreach (self::$paths as $key => $key_config) {
+            Checksum::dir($key)->resetChecksum();
         }
     }
 
